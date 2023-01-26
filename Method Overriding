@@ -1,0 +1,50 @@
+class RBI
+{
+	public double roi() 
+	{
+	 	return 7;
+	}
+}
+class SBI extends RBI
+{
+	public double roi() 
+	{
+	 	return 7.5;
+	}
+}
+class BOM extends RBI
+{
+	public double roi() 
+	{
+	 	return 8.25;
+	}
+}
+class HDFC extends RBI
+{
+	public double roi() 
+	{
+	 	return 7.75;
+	}
+}
+class ICICI extends RBI
+{
+	public double roi() 
+	{
+	 	return 7;
+	}
+}
+class DriverBank
+{
+	public static void main(String[] args) 
+	{
+		RBI a = new SBI();
+		System.out.println("SBI roi is : "+a.roi());
+		RBI b = new BOM();
+		System.out.println("BOM roi is : "+b.roi());
+		RBI c = new HDFC();
+		System.out.println("HDFC roi is : "+c.roi());
+		RBI d = new ICICI();
+		System.out.println("ICICI roi is : "+d.roi());	
+	}	
+		
+}
